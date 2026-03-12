@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+dist/
+build/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+
+# Build outputs
+target/
+*.o
+*.a
+*.so
+.turbo/
+
+# Tauri
+src-tauri/target
+src-tauri/.env
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Redis/Services
+redis-data/
+postgres-data/

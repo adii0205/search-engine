@@ -1,0 +1,25 @@
+{
+  "name": "nexus",
+  "version": "0.1.0",
+  "description": "AI-powered search engine and browser",
+  "private": true,
+  "workspaces": [
+    "extension",
+    "backend",
+    "browser"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @nexus/extension dev\" \"yarn workspace @nexus/backend dev\"",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=3.6.0"
+  }
+}
